@@ -29,7 +29,7 @@ export default function ProfileDataScreen() {
     const [scannedProducts, setProducts] = useState<Product[]>([]);
     const [isLoading, setIsLoading] = useState(false);
 
-    useEffect(() => {  })
+    useEffect(() => { getStoredScan() })
 
     return (
         <SafeAreaView>
